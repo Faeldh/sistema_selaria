@@ -5,7 +5,7 @@ from PyQt5 import uic, QtWidgets
 
 tela_menu = uic.loadUiType('TELAS/tela_menu.ui')[0]
 
-from login import login
+from login import Login
 
 class MainWindow(QtWidgets.QMainWindow, tela_menu):
 
@@ -15,7 +15,7 @@ class MainWindow(QtWidgets.QMainWindow, tela_menu):
 
 
 app = QtWidgets.QApplication(sys.argv)
-janela = MainWindow()
+janela = Login()
 janela.show()
 
 
