@@ -1,9 +1,9 @@
-from PyQt5 import uic, QtWidgets
+from PyQt5 import uic, QtWidgets, 
 from conexao import conectar
 
-tela_login = uic.loadUiType('TELAS/tela_login')[0]
+tela_login = uic.loadUiType('TELAS/tela_login.ui')[0]
 
-class Login(QtWidgets.QMaiWindow, tela_login):
+class Login(QtWidgets.QMainWindow, tela_login):
     def __init__(self):
         super().__init__()
         self.setup(self)
