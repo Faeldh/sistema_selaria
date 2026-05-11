@@ -12,9 +12,8 @@ class MainWindow(QtWidgets.QMainWindow, tela_menu):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
+        
     
-
-
 
 app = QtWidgets.QApplication(sys.argv)
 janela = Login()
