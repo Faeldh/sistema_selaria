@@ -24,12 +24,15 @@ class Login(QtWidgets.QMainWindow, tela_login):
         resultado = cursor.fetchone()
 
         if resultado:
+            print('login ok')
             #QtWidgets.QMessageBox.information(self, 'Login', 'Login realizado com sucesso')
 
             from menu import MainWindow
 
-            janela = MainWindow()
-            janela.show()
+            self.janela = MainWindow()
+            self.janela.show()
+
+            self.close()
         
         else:
             QtWidgets.QMessageBox.warning(self, 'Erro', 'Usuário ou senha inválido')
