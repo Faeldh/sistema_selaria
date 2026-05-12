@@ -8,7 +8,7 @@ class Login(QtWidgets.QMainWindow, tela_login):
         super().__init__()
         self.setupUi(self)
 
-        self.btn_confirmar.clicked.connect(self.verificar_login)
+        self.btn_conectar.clicked.connect(self.verificar_login)
 
     def verificar_login(self):
         nome = self.txt_nome.text()

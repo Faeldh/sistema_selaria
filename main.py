@@ -1,21 +1,12 @@
 import sys
-from PyQt5 import uic, QtWidgets
+from PyQt5 import QtWidgets
 
 
-
-tela_menu = uic.loadUiType('TELAS/tela_menu.ui')[0]
 
 from login import Login
 
-class MainWindow(QtWidgets.QMainWindow, tela_menu):
-
-    def __init__(self):
-        super().__init__()
-        self.setupUi(self)
-        
-    
-
 app = QtWidgets.QApplication(sys.argv)
+
 janela = Login()
 janela.show()
 
