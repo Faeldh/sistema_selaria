@@ -24,9 +24,9 @@ class Login(QtWidgets.QMainWindow, tela_login):
         resultado = cursor.fetchone()
 
         if resultado:
-            QtWidgets.QMessageBox.information(self, 'Login', 'Login realizado com sucesso')
+            #QtWidgets.QMessageBox.information(self, 'Login', 'Login realizado com sucesso')
 
-            from main import MainWindow
+            from menu import MainWindow
 
             janela = MainWindow()
             janela.show()
