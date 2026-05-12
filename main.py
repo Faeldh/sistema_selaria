@@ -1,14 +1,13 @@
 import sys
 from PyQt5 import QtWidgets
-
-
-
 from login import Login
 
-app = QtWidgets.QApplication(sys.argv)
+if __name__ == '__main__':
+    app = QtWidgets.QApplication(sys.argv)
 
-janela = Login()
-janela.show()
+    janela = Login()
+    janela.show()
+    
 
 
-sys.exit(app.exec())
+    sys.exit(app.exec())
